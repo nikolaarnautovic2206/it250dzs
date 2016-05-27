@@ -1,0 +1,45 @@
+<style>
+
+#horribleRoom img{
+
+	width:350px;
+	height:200px;
+
+}
+
+</style>
+
+<div class="container">
+ <div class="jumbotron">
+
+ <h1>DoomHotels</h1>
+ <p>Hotels where you're expected to die !!</p> <div class="zvezdice"> <span class="glyphicon glyphicon-star-empty"></span> </div>
+
+ </div>
+ <div class="row">
+ <div class="col-sm-4">
+<h3><a [routerLink]="['Sobe']">Horrible rooms</a></h3>
+
+	<div id="horribleRoom">
+		<img src="slike/horribleRoom1.jpg"/>
+		</div>
+ </div>
+ <div class="col-sm-4">
+ <h3>More horrible rooms</h3>
+ <div id="horribleRoom">
+		<img src="slike/horribleRoom2.jpg"/>
+		</div>
+ </div>
+ <div class="col-sm-4">
+ <h3>Even more horrible rooms</h3>
+ <div id="horribleRoom">
+		<img src="slike/horribleRoom3.jpg"/>
+		</div>
+ </div>
+ </div>
+
+</div>
+<div class="container">
+	<router-outlet></router-outlet>
+</div>
+<footer><h5>Rated 1 out of 1, would never visit again :(</h5></footer>
